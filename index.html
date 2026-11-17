@@ -908,7 +908,7 @@ form.quote-form{
       <a href="#about" data-en="About Us" data-fr="À propos">About Us</a>
       <a href="#services" data-en="Services" data-fr="Services">Services</a>
       <a href="#projects" data-en="Projects" data-fr="Réalisations">Projects</a>
-      <a href="#gallery" data-en="Gallery" data-fr="Gallery">Gallery</a>
+      <a href="photos.html" data-en="Gallery" data-fr="Galerie">Gallery</a>
       <a href="#quote" data-en="Get a Quote" data-fr="Devis gratuit">Get a Quote</a>
       <a href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
     </nav>
@@ -1470,11 +1470,18 @@ form.quote-form{
     <div class="section-head">
       <div>
         <div class="eyebrow" data-en="Browse Our Work" data-fr="Parcourir nos Réalisations">Browse Our Work</div>
-        <h2 data-en="Gallery" data-fr="Gallery">Gallery</h2>
+        <h2 data-en="Gallery" data-fr="Galerie">Gallery</h2>
       </div>
     </div>
 
     <div class="home-photo-grid" id="home-photo-grid"></div>
+
+    <div class="home-gallery-cta">
+      <a href="photos.html" class="btn btn-primary">
+        <span data-en="View the Full Photo Gallery" data-fr="Voir toute la Galerie Photos">View the Full Photo Gallery</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -1517,7 +1524,7 @@ form.quote-form{
           <b data-en="Navigate" data-fr="Navigation">Navigate</b>
           <a href="#services" data-en="Services" data-fr="Services">Services</a>
           <a href="#projects" data-en="Projects" data-fr="Réalisations">Projects</a>
-          <a href="#gallery" data-en="Gallery" data-fr="Gallery">Gallery</a>
+          <a href="photos.html" data-en="Gallery" data-fr="Galerie">Gallery</a>
           <a href="#about" data-en="About Us" data-fr="À propos">About Us</a>
           <a href="#quote" data-en="Get a Quote" data-fr="Devis gratuit">Get a Quote</a>
         </div>
@@ -1637,7 +1644,9 @@ form.quote-form{
 
   var homeGrid = document.getElementById('home-photo-grid');
   if(homeGrid){
+    var homePreview = [5,23,24,18,31,11,20,3];
     homePhotos.forEach(function(p, idx){
+      if(homePreview.indexOf(idx) === -1) return;
       var tile = document.createElement('div');
       tile.className = 'home-photo-tile';
       tile.setAttribute('data-index', idx);
@@ -1666,8 +1675,8 @@ form.quote-form{
       var p = homePhotos[homeCurrentIndex];
       hlImg.src = p.src;
       hlImg.alt = p.en;
-      renderHomeLightboxCaption();
       homeLightbox.classList.add('open');
+      renderHomeLightboxCaption();
       homeLightbox.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
     }

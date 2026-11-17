@@ -1322,7 +1322,7 @@ form.quote-form{
   var currentIndex = 0;
 
   function renderLightboxCaption(){
-    if(!lightbox.classList.contains('open')) return;
+    if(!lightbox || !lightbox.classList.contains('open')) return;
     var p = photos[currentIndex];
     var lang = htmlEl.getAttribute('data-lang') || 'en';
     lbCaption.textContent = (lang === 'fr' ? p.fr : p.en) + '  —  ' + (lang === 'fr' ? p.cat_fr : p.cat_en);
@@ -1333,8 +1333,8 @@ form.quote-form{
     var p = photos[currentIndex];
     lbImg.src = p.src;
     lbImg.alt = p.en;
-    renderLightboxCaption();
     lightbox.classList.add('open');
+    renderLightboxCaption();
     lightbox.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
   }
