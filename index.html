@@ -873,6 +873,20 @@ form.quote-form{
   box-shadow:0 8px 22px rgba(240,90,22,0.24);
 }
 
+/* Email click confirmation toast */
+.mail-toast{
+  position:fixed; left:50%; bottom:28px; z-index:9999;
+  transform:translate(-50%, 20px); opacity:0; pointer-events:none;
+  max-width:calc(100vw - 32px);
+  padding:12px 20px;
+  background:var(--anthracite); color:var(--bone);
+  border:1px solid var(--copper-hot); border-radius:var(--radius);
+  box-shadow:0 14px 34px rgba(10,12,15,0.35);
+  font-size:0.9rem; text-align:center;
+  transition:opacity .25s ease, transform .25s ease;
+}
+.mail-toast.show{opacity:1; transform:translate(-50%, 0);}
+
 </style>
 </head>
 <body>
@@ -1607,7 +1621,17 @@ form.quote-form{
     {src:'assets/gallery/yard-after.jpg', en:'Backyard after sod installation with a fresh green lawn', fr:'Cour arrière après pose de gazon, avec pelouse verte fraîche'},
     {src:'assets/gallery/yard-after-02.jpg', en:'Concrete patio edge meeting the new lawn', fr:'Bordure de patio en béton rejoignant la nouvelle pelouse'},
     {src:'assets/gallery/snow-01.jpg', en:'Cleared driveway and carport path through deep snow', fr:"Entrée et abri d'auto déneigés à travers une neige profonde"},
-    {src:'assets/gallery/fleet-01.jpg', en:'Bronzefox work truck towing an equipment trailer on a job site', fr:"Camion de travail Bronzefox tirant une remorque d'équipement sur un chantier"}
+    {src:'assets/gallery/fleet-01.jpg', en:'Bronzefox work truck towing an equipment trailer on a job site', fr:"Camion de travail Bronzefox tirant une remorque d'équipement sur un chantier"},
+    {src:'assets/gallery/sod-delivery-01.jpg', en:'Bronzefox truck delivering fresh sod rolls to a job site', fr:'Camion Bronzefox livrant des rouleaux de gazon frais sur un chantier'},
+    {src:'assets/gallery/deck-dark-01.jpg', en:'Dark-stained deck against the house with a horizontal slat privacy screen', fr:'Terrasse teintée foncée contre la maison, avec écran de intimité à lattes horizontales'},
+    {src:'assets/gallery/retaining-corner-finished.jpg', en:'Finished front yard retaining wall with a boulder accent and barrel planters', fr:'Muret de soutènement de cour avant terminé, avec rocher décoratif et bacs en baril'},
+    {src:'assets/gallery/shed-yard-01.jpg', en:'Graded gravel yard with a garden shed and raised planter box', fr:'Cour en gravier nivelée avec remise de jardin et bac à fleurs surélevé'},
+    {src:'assets/gallery/foundation-insulation-02.jpg', en:'Foundation insulation board and plumbing lines along a framed house', fr:'Panneau isolant de fondation et conduites de plomberie le long d\'une maison charpentée'},
+    {src:'assets/gallery/demolition-cab-pov.jpg', en:"Operator's view from the cab while clearing concrete demolition debris", fr:"Vue depuis la cabine de l'opérateur lors du dégagement de débris de démolition"},
+    {src:'assets/gallery/timber-border-install.jpg', en:'Installing a timber landscape border along a townhouse walkway', fr:'Installation d\'une bordure paysagère en bois le long d\'une allée de maison en rangée'},
+    {src:'assets/gallery/sidewalk-concrete-01.jpg', en:'Finished concrete sidewalk beside a new timber border and mini excavator', fr:'Trottoir en béton terminé à côté d\'une nouvelle bordure en bois et d\'une mini-pelle'},
+    {src:'assets/gallery/backyard-grading-01.jpg', en:'Backyard graded and raked smooth, ready for sod', fr:'Cour arrière nivelée et ratissée, prête pour le gazon'},
+    {src:'assets/gallery/lawn-birch-after.jpg', en:'Finished lawn framed by birch trees after sod installation', fr:'Pelouse terminée encadrée de bouleaux après la pose du gazon'}
   ];
 
   var homeGrid = document.getElementById('home-photo-grid');
@@ -1682,6 +1706,51 @@ form.quote-form{
       if(e.key === 'ArrowRight') showHomeDelta(1);
     });
   }
+
+  /* ---- Email links: open mail app + copy address as fallback --- */
+  var mailToast = document.createElement('div');
+  mailToast.className = 'mail-toast';
+  mailToast.setAttribute('role', 'status');
+  mailToast.setAttribute('aria-live', 'polite');
+  document.body.appendChild(mailToast);
+  var mailToastTimer = null;
+
+  function showMailToast(address){
+    var fr = htmlEl.getAttribute('data-lang') === 'fr';
+    mailToast.textContent = fr
+      ? 'Adresse copiée : ' + address + ' — collez-la dans votre messagerie.'
+      : 'Address copied: ' + address + ' — paste it into your email app.';
+    mailToast.classList.add('show');
+    clearTimeout(mailToastTimer);
+    mailToastTimer = setTimeout(function(){ mailToast.classList.remove('show'); }, 4500);
+  }
+
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function(resolve, reject){
+      try{
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        var ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        ok ? resolve() : reject();
+      }catch(err){ reject(err); }
+    });
+  }
+
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(link){
+    link.addEventListener('click', function(){
+      var address = link.getAttribute('href').replace(/^mailto:/i, '').split('?')[0];
+      copyText(address).then(function(){ showMailToast(address); }).catch(function(){});
+    });
+  });
 
 })();
 </script>
