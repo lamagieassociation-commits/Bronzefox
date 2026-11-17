@@ -885,7 +885,8 @@ form.quote-form{
   font-size:0.9rem; text-align:center;
   transition:opacity .25s ease, transform .25s ease;
 }
-.mail-toast.show{opacity:1; transform:translate(-50%, 0);}
+.mail-toast.show{opacity:1; transform:translate(-50%, 0); pointer-events:auto;}
+.mail-toast-btn{display:inline-block; margin-left:6px; padding:4px 12px; border-radius:var(--radius); background:var(--copper-hot); color:#fff; font-weight:700; text-decoration:none;}
 
 </style>
 </head>
@@ -1717,12 +1718,18 @@ form.quote-form{
 
   function showMailToast(address){
     var fr = htmlEl.getAttribute('data-lang') === 'fr';
-    mailToast.textContent = fr
-      ? 'Adresse copiée : ' + address + ' — collez-la dans votre messagerie.'
-      : 'Address copied: ' + address + ' — paste it into your email app.';
+    mailToast.textContent = (fr
+      ? 'Adresse copiée : ' + address + ' — collez-la dans votre messagerie. '
+      : 'Address copied: ' + address + ' — paste it into your email app. ');
+    var g = document.createElement('a');
+    g.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(address);
+    g.target = '_blank'; g.rel = 'noopener';
+    g.className = 'mail-toast-btn';
+    g.textContent = fr ? 'Ouvrir Gmail' : 'Open Gmail';
+    mailToast.appendChild(g);
     mailToast.classList.add('show');
     clearTimeout(mailToastTimer);
-    mailToastTimer = setTimeout(function(){ mailToast.classList.remove('show'); }, 4500);
+    mailToastTimer = setTimeout(function(){ mailToast.classList.remove('show'); }, 9000);
   }
 
   function copyText(text){
