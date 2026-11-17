@@ -1753,9 +1753,12 @@ form.quote-form{
   }
 
   document.querySelectorAll('a[href^="mailto:"]').forEach(function(link){
-    link.addEventListener('click', function(){
+    link.addEventListener('click', function(e){
       var address = link.getAttribute('href').replace(/^mailto:/i, '').split('?')[0];
-      copyText(address).then(function(){ showMailToast(address); }).catch(function(){});
+      var gmail = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(address);
+      var w = window.open(gmail, '_blank', 'noopener');
+      if(w){ e.preventDefault(); }
+      else { copyText(address).then(function(){ showMailToast(address); }).catch(function(){}); }
     });
   });
 
