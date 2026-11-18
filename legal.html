@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
+<title>Legal Notice | Bronzefox Contracting Inc.</title>
+<meta name="description" content="Legal notice and privacy policy — Bronzefox Contracting Inc., Whitehorse, Yukon. / Mentions légales et politique de confidentialité.">
+<link rel="canonical" href="https://bronzefoxinc.com/legal.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+/* =========================================================
+   1. DESIGN TOKENS
+   ========================================================= */
+:root{
+  /* Palette — earthy copper/bronze, anthracite, warm off-white,
+     with a hot copper-orange reserved strictly for action & signature moments */
+  --copper-deep:      #9A3F12;
+  --copper:           #C84D13;
+  --copper-hot:       #F05A16; /* CTA / signature accent only */
+  --anthracite:       #0A0C0F;
+  --anthracite-2:     #121519;
+  --bone:             #FFFFFF;
+  --bone-dim:         #F2F2F0;
+  --ink:              #111315;
+  --line:             rgba(10,12,15,0.12);
+  --line-on-dark:     rgba(255,255,255,0.14);
+  --geo-size:          22px; /* geometric motif module size */
+
+  --font-display: 'Anton', 'Arial Narrow', sans-serif;
+  --font-body:    'Work Sans', -apple-system, Segoe UI, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+
+  --container: 1180px;
+  --radius: 2px; /* deliberately near-square: rugged, not rounded/soft */
+}
+
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--bone);
+  -webkit-font-smoothing: antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%; display:block;}
+a{color:inherit; text-decoration:none;}
+ul{list-style:none;}
+button{font-family:inherit; cursor:pointer;}
+.container{max-width:var(--container); margin:0 auto; padding:0 24px;}
+
+.eyebrow{
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--copper-hot);
+  font-weight:700;
+  display:flex; align-items:center; gap:10px;
+}
+.eyebrow::before{
+  content:""; width:22px; height:2px; background:var(--copper-hot); display:inline-block;
+}
+
+h1,h2,h3{
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 0.96;
+  font-weight:400;
+}
+h2{font-size: clamp(2rem, 4.2vw, 3.1rem); margin-bottom: 0.3em;}
+p{line-height:1.65; color:#4b453e;}
+
+.btn{
+  display:inline-flex; align-items:center; gap:10px;
+  padding: 15px 26px;
+  font-family: var(--font-mono);
+  font-weight:700;
+  font-size:0.82rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  border:2px solid transparent;
+  border-radius: var(--radius);
+  transition: transform .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
+  white-space:nowrap;
+}
+.btn svg{width:16px; height:16px; flex:none;}
+.btn:hover{transform: translateY(-2px);}
+.btn:focus-visible{outline:3px solid var(--copper-hot); outline-offset:3px;}
+.btn-primary{background:var(--copper-hot); color:var(--bone);}
+.btn-primary:hover{background:#c25526;}
+.btn-outline-dark{border-color:var(--anthracite); color:var(--anthracite); background:transparent;}
+.btn-outline-dark:hover{background:var(--anthracite); color:var(--bone);}
+.btn-outline-light{border-color:var(--line-on-dark); color:var(--bone); background:transparent;}
+.btn-outline-light:hover{background:var(--bone); color:var(--anthracite); border-color:var(--bone);}
+
+section{padding: 96px 0;}
+@media (max-width:720px){ section{padding:64px 0;} }
+
+/* language toggling: elements carry data-en / data-fr, JS swaps textContent */
+[data-en],[data-fr]{}
+
+/* =========================================================
+   2. HEADER
+   ========================================================= */
+.site-header{
+  position: sticky; top:0; z-index: 500;
+  background: rgba(30,36,43,0.96);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line-on-dark);
+}
+.header-inner{
+  display:flex; align-items:center; justify-content:space-between;
+  gap: 20px; padding: 10px 24px; max-width: var(--container); margin:0 auto;
+}
+.brand{display:flex; align-items:center; gap:12px;}
+.brand img{width:52px; height:52px; border-radius:50%; object-fit:cover; border:2px solid var(--copper-hot);}
+.brand-name{font-family:var(--font-display); color:var(--bone); font-size:1.1rem; letter-spacing:0.03em; line-height:1.1;}
+.brand-name small{display:block; font-family:var(--font-mono); font-size:0.6rem; letter-spacing:0.18em; color:var(--copper-hot); font-weight:700; margin-top:2px;}
+
+.main-nav{display:flex; align-items:center; gap:28px;}
+.main-nav a{
+  color: var(--bone); font-size:0.82rem; letter-spacing:0.05em; text-transform:uppercase;
+  font-weight:600; position:relative; padding:6px 0;
+}
+.main-nav a::after{
+  content:""; position:absolute; left:0; bottom:0; height:2px; width:0;
+  background:var(--copper-hot); transition:width .2s ease;
+}
+.main-nav a:hover::after, .main-nav a:focus-visible::after{width:100%;}
+
+.header-actions{display:flex; align-items:center; gap:14px; flex-shrink:0;}
+.lang-switch{
+  display:grid;
+  grid-template-columns:42px 42px;
+  width:84px;
+  min-width:84px;
+  flex:0 0 84px;
+  font-family:var(--font-mono);
+  font-size:0.75rem;
+  font-weight:700;
+  border:1px solid rgba(247,245,240,0.55);
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:rgba(255,255,255,0.04);
+}
+
+.lang-switch button{
+  width:42px;
+  min-width:42px;
+  height:34px;
+  padding:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+  color:var(--bone);
+  border:0;
+  letter-spacing:0.05em;
+  white-space:nowrap;
+}
+
+.lang-switch button + button{
+  border-left:1px solid rgba(247,245,240,0.55);
+}
+
+.lang-switch button.active{
+  background:var(--copper-hot);
+  color:var(--anthracite);
+}
+
+.lang-switch button:focus-visible{
+  outline:2px solid var(--bone);
+  outline-offset:-3px;
+}
+
+.call-chip{
+  display:flex; align-items:center; gap:8px; color:var(--bone);
+  font-family:var(--font-mono); font-size:0.82rem; font-weight:700;
+}
+.call-chip svg{width:16px; height:16px; color:var(--copper-hot);}
+
+.burger{display:none; background:none; border:none; padding:8px;}
+.burger span, .burger::before, .burger::after{}
+.burger-icon{display:block; width:24px; height:2px; background:var(--bone); position:relative;}
+.burger-icon::before, .burger-icon::after{content:""; position:absolute; left:0; width:24px; height:2px; background:var(--bone);}
+.burger-icon::before{top:-8px;} .burger-icon::after{top:8px;}
+
+@media (max-width: 980px){
+  .main-nav{
+    position:fixed; inset:64px 0 0 0; background:var(--anthracite);
+    flex-direction:column; align-items:flex-start; gap:0; padding:16px 24px;
+    transform: translateX(100%); transition: transform .3s ease; overflow-y:auto;
+  }
+  .main-nav.open{transform:translateX(0);}
+  .main-nav a{width:100%; padding:16px 0; border-bottom:1px solid var(--line-on-dark);}
+  .burger{display:block;}
+  .header-actions .btn-primary{display:none;}
+}
+
+/* =========================================================
+   3. HERO — topographic / excavation-inspired signature
+   ========================================================= */
+.hero{
+  position:relative; background: var(--anthracite);
+  color: var(--bone); overflow:hidden;
+  padding: 110px 0 90px;
+}
+.hero-bg-image{
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; z-index:1; opacity:1; filter:brightness(1.34) contrast(1.04) saturate(1.06);
+}
+.hero-grad{
+  position:absolute; inset:0; z-index:2;
+  background:
+    linear-gradient(90deg, rgba(5,6,8,0.34) 0%, rgba(5,6,8,0.16) 46%, rgba(5,6,8,0.04) 100%),
+    linear-gradient(180deg, rgba(5,6,8,0.02), rgba(5,6,8,0.42) 88%);
+}
+.hero-inner{position:relative; z-index:3; max-width:var(--container); margin:0 auto; padding:0 24px;}
+.hero-corner-logo{
+  position:absolute; top:90px; right:18px; z-index:4;
+  width:128px; height:128px; border-radius:50%;
+  background:rgba(10,12,15,0.55); backdrop-filter:blur(4px);
+  border:1px solid rgba(255,255,255,0.22);
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 10px 26px rgba(0,0,0,0.35);
+}
+.hero-corner-logo img{width:78%; height:78%; object-fit:contain; border-radius:50%;}
+@media (max-width:760px){
+  .hero-corner-logo{width:84px; height:84px; top:60px; right:12px;}
+}
+.hero-eyebrow{margin-bottom:22px;}
+.hero h1{
+  font-size: clamp(2.8rem, 8vw, 6rem);
+  max-width: 15ch;
+  color:var(--bone);
+}
+.hero h1 .accent{color:var(--copper-hot);}
+.hero-sub{
+  font-family:var(--font-mono); font-size:0.95rem; letter-spacing:0.02em;
+  color:#cfc9bd; margin: 22px 0 34px; max-width:52ch; text-transform:uppercase;
+}
+.hero-services-line{display:flex; flex-wrap:wrap; gap:10px 18px; margin-bottom:34px;}
+.hero-services-line span{
+  font-family:var(--font-mono); font-size:0.74rem; color:var(--bone); letter-spacing:0.04em;
+  padding-right:18px; border-right:1px solid var(--line-on-dark);
+}
+.hero-services-line span:last-child{border-right:none;}
+.hero-ctas{display:flex; flex-wrap:wrap; gap:14px;}
+
+.hero-badges{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+  border-top:1px solid var(--line-on-dark); margin-top:70px;
+}
+.hero-badge{
+  padding:22px 18px 0; display:flex; gap:12px; align-items:flex-start;
+  border-right:1px solid var(--line-on-dark);
+}
+.hero-badge:last-child{border-right:none;}
+.hero-badge svg{width:26px; height:26px; color:var(--copper-hot); flex:none;}
+.hero-badge b{display:block; font-size:0.82rem; letter-spacing:0.03em; color:var(--bone);}
+.hero-badge small{font-family:var(--font-mono); font-size:0.7rem; color:#a29c90;}
+@media (max-width:820px){
+  .hero-badges{grid-template-columns:repeat(2,1fr); row-gap:20px;}
+  .hero-badge{border-right:none;}
+}
+
+/* =========================================================
+   3b. GEOMETRIC MOTIF — subtle Northern-inspired signature
+   A restrained, abstract chevron band used sparingly as a
+   section divider, plus a faint diamond watermark for texture.
+   Geometric only — no specific cultural iconography reproduced.
+   ========================================================= */
+.geo-divider{
+  height:12px;
+  background-image:
+    linear-gradient(135deg, var(--copper-hot) 25%, transparent 25.5%),
+    linear-gradient(225deg, var(--copper-hot) 25%, transparent 25.5%),
+    linear-gradient(315deg, var(--copper-hot) 25%, transparent 25.5%),
+    linear-gradient(45deg,  var(--copper-hot) 25%, transparent 25.5%);
+  background-position: 11px 0, 11px 0, 0 0, 0 0;
+  background-size: var(--geo-size) var(--geo-size);
+  background-repeat: repeat-x;
+  opacity:0.9;
+}
+.geo-divider.on-dark{opacity:0.55;}
+.geo-watermark{
+  position:absolute; inset:0; pointer-events:none; z-index:0;
+  background-image:
+    linear-gradient(135deg, var(--copper-hot) 25%, transparent 25.5%),
+    linear-gradient(225deg, var(--copper-hot) 25%, transparent 25.5%),
+    linear-gradient(315deg, var(--copper-hot) 25%, transparent 25.5%),
+    linear-gradient(45deg,  var(--copper-hot) 25%, transparent 25.5%);
+  background-position: 30px 0, 30px 0, 0 0, 0 0;
+  background-size: 60px 60px;
+  opacity:0.045;
+}
+
+/* =========================================================
+   4. SERVICES
+   ========================================================= */
+.services{background:var(--bone);}
+.section-head{display:flex; justify-content:space-between; align-items:flex-end; gap:20px; margin-bottom:48px; flex-wrap:wrap;}
+.service-grid{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
+  background:var(--line); border:1px solid var(--line);
+}
+@media (max-width:900px){ .service-grid{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:560px){ .service-grid{grid-template-columns:1fr;} }
+.service-card{
+  background:var(--bone); padding:34px 26px; transition: background .2s ease;
+}
+.service-card:hover{background:var(--bone-dim);}
+.service-num{font-family:var(--font-mono); color:var(--copper); font-size:0.75rem; font-weight:700;}
+.service-icon{width:40px; height:40px; color:var(--anthracite); margin:16px 0 18px;}
+.service-card h3{font-size:1.25rem; margin-bottom:10px; letter-spacing:0.01em;}
+.service-card p{font-size:0.92rem;}
+
+.service-feature{
+  grid-column: 1 / -1;
+  background: var(--anthracite);
+  color: var(--bone);
+  padding: 34px 36px;
+  display:grid;
+  grid-template-columns: 64px 1fr auto;
+  gap:24px;
+  align-items:center;
+  border-top:3px solid var(--copper-hot);
+}
+.service-feature .service-icon{width:44px; height:44px; color:var(--copper-hot); margin:0;}
+.service-feature .service-feature-text h3{color:var(--bone); font-size:1.3rem; margin-bottom:6px;}
+.service-feature .service-feature-text p{color:#c9c3b7; font-size:0.94rem; max-width:56ch;}
+.service-feature .service-feature-tag{
+  font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase;
+  color:var(--copper-hot); font-weight:700; white-space:nowrap;
+}
+@media (max-width:760px){
+  .service-feature{grid-template-columns:48px 1fr; row-gap:14px;}
+  .service-feature .service-feature-tag{grid-column:2; }
+}
+
+/* =========================================================
+   5. ABOUT / VALUES
+   ========================================================= */
+.about{background:var(--anthracite-2); color:var(--bone);}
+.about-grid{display:grid; grid-template-columns: 1fr 1fr; gap:70px; align-items:start;}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr; gap:40px;}}
+.about h2{color:var(--bone);}
+.about p{color:#c9c3b7;}
+.about .lede{font-size:1.08rem; margin-bottom:26px; max-width:52ch;}
+
+.value-list{display:flex; flex-direction:column; gap:0; margin-top:10px;}
+.value-item{
+  display:grid; grid-template-columns:56px 1fr; gap:18px;
+  padding:22px 0; border-top:1px solid var(--line-on-dark);
+}
+.value-item:last-child{border-bottom:1px solid var(--line-on-dark);}
+.value-item svg{width:32px; height:32px; color:var(--copper-hot);}
+.value-item h3{font-size:1.05rem; text-transform:none; font-family:var(--font-body); font-weight:700; letter-spacing:0; margin-bottom:6px;}
+.value-item p{font-size:0.9rem; color:#b7b0a3;}
+
+/* =========================================================
+   6. BEFORE / AFTER — static project gallery
+   ========================================================= */
+.showcase{background:var(--bone);}
+.duo-gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:40px;
+}
+.gallery-item{
+  background:var(--bone);
+  border:1px solid var(--line);
+  padding:30px;
+  box-shadow:0 18px 40px rgba(10,12,15,0.06);
+}
+.gallery-label{
+  font-family:var(--font-body);
+  font-size:1rem;
+  line-height:1.35;
+  text-transform:none;
+  font-weight:700;
+  letter-spacing:0;
+  margin-bottom:20px;
+}
+.ba-wrap-static{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:3px;
+  overflow:hidden;
+  background:var(--anthracite);
+  border:2px solid var(--anthracite);
+}
+.ba-side{
+  position:relative;
+  min-width:0;
+  aspect-ratio:3 / 2;
+  overflow:hidden;
+  background:var(--anthracite-2);
+}
+.ba-side img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.ba-tag-static{
+  position:absolute;
+  right:10px;
+  bottom:10px;
+  z-index:2;
+  padding:6px 10px;
+  background:rgba(10,12,15,0.82);
+  color:var(--bone);
+  font-family:var(--font-mono);
+  font-size:0.68rem;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+}
+.ba-note{
+  font-family:var(--font-mono);
+  font-size:0.75rem;
+  color:#8a8378;
+  text-align:center;
+  margin-top:18px;
+  letter-spacing:0.04em;
+}
+@media (max-width:900px){
+  .duo-gallery-grid{grid-template-columns:1fr;}
+}
+@media (max-width:560px){
+  .ba-wrap-static{grid-template-columns:1fr;}
+  .ba-side{aspect-ratio:16 / 10;}
+  .gallery-item{padding:18px;}
+}
+
+/* =========================================================
+   7. PROJECTS / GALLERY
+   ========================================================= */
+.projects{background:var(--bone-dim);}
+.project-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+@media (max-width:900px){.project-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.project-grid{grid-template-columns:1fr;}}
+.project-card{background:var(--bone); border:1px solid var(--line);}
+.project-photo{
+  aspect-ratio:4/3; position:relative; overflow:hidden;
+  background: linear-gradient(135deg, var(--anthracite) 0%, var(--anthracite-2) 100%);
+  display:flex; align-items:center; justify-content:center;
+}
+.project-photo::before{
+  content:""; position:absolute; inset:0;
+  background-image: linear-gradient(var(--line-on-dark) 1px, transparent 1px), linear-gradient(90deg, var(--line-on-dark) 1px, transparent 1px);
+  background-size:22px 22px; opacity:0.5;
+}
+.project-photo svg{width:34px; height:34px; color:var(--copper-hot); position:relative;}
+.project-photo-soon{position:relative; display:flex; flex-direction:column; align-items:center; gap:10px;}
+.project-photo-soon svg{width:34px; height:34px; color:var(--copper-hot);}
+.project-photo-soon span{font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.06em; text-transform:uppercase; color:#8a8378;}
+.project-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  position:relative;
+  z-index:1;
+}
+.project-photo.has-image::before{display:none;}
+
+.project-body{padding:18px 20px;}
+.project-tag{font-family:var(--font-mono); font-size:0.68rem; color:var(--copper); letter-spacing:0.08em; text-transform:uppercase;}
+.project-body h3{font-size:1.05rem; text-transform:none; font-family:var(--font-body); font-weight:700; letter-spacing:0; margin:6px 0 4px;}
+.project-loc{font-family:var(--font-mono); font-size:0.75rem; color:#7c766b;}
+
+/* =========================================================
+   8. QUOTE FORM
+   ========================================================= */
+.quote{background:var(--anthracite); color:var(--bone); position:relative; overflow:hidden;}
+.quote-grid{display:grid; grid-template-columns: 0.9fr 1.1fr; gap:60px; position:relative; z-index:1;}
+@media (max-width:900px){.quote-grid{grid-template-columns:1fr;}}
+.quote h2{color:var(--bone);}
+.quote p{color:#c9c3b7; max-width:44ch;}
+.quote-points{margin-top:28px; display:flex; flex-direction:column; gap:16px;}
+.quote-points li{display:flex; gap:12px; align-items:flex-start; font-size:0.9rem; color:#dcd7cc; list-style:none;}
+.quote-points svg{width:18px; height:18px; color:var(--copper-hot); flex:none; margin-top:2px;}
+
+form.quote-form{background:var(--bone); color:var(--ink); padding:34px; border-top:4px solid var(--copper-hot);}
+.field-row{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+@media (max-width:560px){.field-row{grid-template-columns:1fr;}}
+.field{margin-bottom:18px;}
+.field label{
+  display:block; font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.08em;
+  text-transform:uppercase; margin-bottom:7px; color:#5a544a; font-weight:700;
+}
+.field input, .field select, .field textarea{
+  width:100%; padding:12px 14px; border:1px solid var(--line); background:var(--bone);
+  font-family:var(--font-body); font-size:0.92rem; border-radius:var(--radius); color:var(--ink);
+}
+.field input:focus, .field select:focus, .field textarea:focus{
+  outline:2px solid var(--copper-hot); outline-offset:1px; border-color:var(--copper-hot);
+}
+.field textarea{min-height:110px; resize:vertical;}
+.upload-zone{
+  border:2px dashed var(--line); padding:26px; text-align:center; border-radius:var(--radius);
+  font-family:var(--font-mono); font-size:0.78rem; color:#7c766b; margin-bottom:20px; cursor:pointer;
+  transition:border-color .2s ease, background .2s ease;
+}
+.upload-zone:hover, .upload-zone:focus-visible{border-color:var(--copper-hot); background:var(--bone-dim);}
+.upload-zone svg{width:26px; height:26px; margin:0 auto 10px; color:var(--copper);}
+.form-note{font-size:0.75rem; color:#8a8378; margin-top:10px;}
+
+/* =========================================================
+   9. CONTACT
+   ========================================================= */
+.contact{background:var(--bone);}
+.contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:50px;}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr;}}
+.contact-list{display:flex; flex-direction:column; gap:22px; margin-top:10px;}
+.contact-item{display:flex; gap:16px; align-items:flex-start;}
+.contact-item svg{width:22px; height:22px; color:var(--copper-hot); flex:none; margin-top:3px;}
+.contact-item b{display:block; font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; font-family:var(--font-mono); color:#7c766b; margin-bottom:3px;}
+.contact-item a, .contact-item span{font-size:1rem; font-weight:600;}
+.social-row{display:flex; gap:12px; margin-top:26px;}
+.social-row a{
+  width:40px; height:40px; border:1px solid var(--line); border-radius:50%;
+  display:flex; align-items:center; justify-content:center; transition:background .2s, border-color .2s;
+}
+.social-row a:hover{background:var(--anthracite); border-color:var(--anthracite);}
+.social-row a:hover svg{color:var(--bone);}
+.social-row svg{width:18px; height:18px; color:var(--anthracite);}
+
+.map-frame{border:1px solid var(--line); overflow:hidden; aspect-ratio:4/3;}
+.map-frame iframe{width:100%; height:100%; border:0;}
+
+/* =========================================================
+   10. FOOTER
+   ========================================================= */
+.site-footer{background:var(--anthracite); color:#a29c90; padding: 56px 0 24px;}
+.footer-top{display:flex; justify-content:space-between; flex-wrap:wrap; gap:32px; padding-bottom:36px; border-bottom:1px solid var(--line-on-dark);}
+.footer-brand{display:flex; gap:14px; align-items:center;}
+.footer-brand img{width:48px; height:48px; border-radius:50%; border:2px solid var(--copper-hot);}
+.footer-brand-name{font-family:var(--font-display); color:var(--bone); font-size:1rem; letter-spacing:0.02em;}
+.footer-cols{display:flex; gap:60px; flex-wrap:wrap;}
+.footer-col b{display:block; font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--copper-hot); margin-bottom:14px;}
+.footer-col a, .footer-col span{display:block; font-size:0.86rem; margin-bottom:9px; color:#c9c3b7;}
+.footer-col a:hover{color:var(--bone);}
+.footer-bottom{
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+  padding-top:22px; font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.02em;
+}
+.footer-legal a{margin-left:18px;}
+.footer-legal a:first-child{margin-left:0;}
+
+.skip-link{
+  position:absolute; left:-999px; top:0; background:var(--copper-hot); color:var(--bone);
+  padding:12px 18px; z-index:999; font-family:var(--font-mono);
+}
+.skip-link:focus{left:12px; top:12px;}
+
+@media (prefers-reduced-motion: reduce){
+  *{scroll-behavior:auto !important; transition:none !important; animation:none !important;}
+}
+
+.webmaster-credit{
+  width:100%;
+  margin:26px auto 0;
+  padding-top:18px;
+  border-top:1px solid var(--line-on-dark);
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  text-align:center;
+  font-family:var(--font-mono);
+  font-size:0.74rem;
+  letter-spacing:0.04em;
+  color:#c9c3b7;
+  opacity:1;
+}
+.webmaster-credit a{
+  color:var(--bone);
+  text-decoration:none;
+}
+.webmaster-credit a:hover{
+  color:var(--copper-hot);
+}
+.footer-facebook{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:7px 12px;
+  border:1px solid var(--line-on-dark);
+  border-radius:999px;
+  color:var(--bone);
+  transition:background .2s ease, border-color .2s ease, color .2s ease;
+}
+.footer-facebook:hover{
+  background:var(--copper-hot);
+  border-color:var(--copper-hot);
+  color:var(--bone);
+}
+.footer-facebook svg{
+  width:18px;
+  height:18px;
+  flex:none;
+}
+
+
+/* Refined black / white / orange visual treatment */
+body{
+  background:#fff;
+}
+.site-header{
+  background:rgba(8,10,12,0.97);
+  border-bottom:1px solid rgba(240,90,22,0.45);
+  box-shadow:0 8px 24px rgba(0,0,0,0.18);
+}
+.brand img{
+  box-shadow:0 0 0 3px rgba(240,90,22,0.12), 0 8px 20px rgba(0,0,0,0.35);
+}
+.main-nav a:hover,
+.main-nav a:focus-visible{
+  color:var(--copper-hot);
+}
+/* Corrected hero treatment: the photo stays bright and visible —
+   contrast for the type comes from a dedicated panel behind the
+   headline, not from darkening the whole image. */
+.hero-grad{
+  background:
+    linear-gradient(100deg, rgba(10,12,15,0.20) 0%, rgba(10,12,15,0.02) 42%, transparent 70%),
+    linear-gradient(0deg, rgba(10,12,15,0.32) 0%, transparent 30%);
+}
+.hero-panel{
+  position:relative;
+  display:inline-block;
+  max-width:min(100%, 640px);
+  background:rgba(10,12,15,0.62);
+  backdrop-filter:blur(3px);
+  border-left:3px solid var(--copper-hot);
+  padding:30px 34px;
+  margin-bottom:0;
+}
+.hero h1{
+  text-shadow:0 2px 10px rgba(0,0,0,0.35);
+}
+.hero-badges{
+  background:rgba(10,12,15,0.66);
+  backdrop-filter:blur(6px);
+  border-top:1px solid rgba(255,255,255,0.18);
+}
+.service-grid{
+  background:#d8d8d8;
+  border-color:#d8d8d8;
+  box-shadow:0 18px 40px rgba(0,0,0,0.07);
+}
+.service-card{
+  background:#fff;
+  position:relative;
+}
+.service-card::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:3px;
+  background:var(--copper-hot);
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .2s ease;
+}
+.service-card:hover::after{
+  transform:scaleX(1);
+}
+.service-icon{
+  color:var(--copper-hot);
+}
+.about{
+  background:linear-gradient(135deg, #090B0E 0%, #171B20 100%);
+  position:relative;
+}
+.about::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at 80% 20%, rgba(240,90,22,0.12), transparent 34%);
+  pointer-events:none;
+}
+.about-grid{
+  position:relative;
+  z-index:1;
+}
+.about-tom-card{
+  margin-top:30px;
+  max-width:520px;
+  border:1px solid rgba(255,255,255,0.12);
+  border-bottom:4px solid var(--copper-hot);
+  background:#0E1115;
+  box-shadow:0 24px 50px rgba(0,0,0,0.34);
+  overflow:hidden;
+}
+.about-tom-card img{
+  width:100%;
+  aspect-ratio:1 / 1;
+  object-fit:cover;
+  object-position:center top;
+  filter:saturate(1) contrast(1.03);
+}
+.about-tom-caption{
+  padding:12px 16px;
+  color:#d8d8d8;
+  font-family:var(--font-mono);
+  font-size:0.72rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+}
+.gallery-item,
+.project-card{
+  background:#fff;
+  border-color:#d7d7d7;
+  box-shadow:0 12px 28px rgba(0,0,0,0.06);
+}
+.project-card{
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.project-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 34px rgba(0,0,0,0.12);
+}
+.project-tag{
+  color:var(--copper-hot);
+  font-weight:700;
+}
+.quote{
+  background:linear-gradient(135deg, #090B0E 0%, #171A1F 100%);
+}
+form.quote-form{
+  background:#fff;
+  box-shadow:0 22px 50px rgba(0,0,0,0.28);
+}
+.site-footer{
+  background:#080A0D;
+  border-top:4px solid var(--copper-hot);
+}
+.btn-primary{
+  box-shadow:0 8px 22px rgba(240,90,22,0.24);
+}
+
+
+
+/* =========================================================
+   GALLERY PAGE — extra styles
+   ========================================================= */
+.gallery-hero{
+  background: var(--anthracite);
+  color: var(--bone);
+  padding: 150px 0 50px;
+  position:relative;
+  overflow:hidden;
+}
+.gallery-hero::after{
+  content:"";
+  position:absolute; inset:0;
+  background-image: linear-gradient(var(--line-on-dark) 1px, transparent 1px), linear-gradient(90deg, var(--line-on-dark) 1px, transparent 1px);
+  background-size:26px 26px;
+  opacity:0.35;
+  pointer-events:none;
+}
+.gallery-hero .container{position:relative; z-index:1;}
+.gallery-hero .eyebrow{color:var(--copper-hot);}
+.gallery-hero h1{font-size:clamp(2.2rem, 5vw, 3.4rem); margin:10px 0 14px;}
+.gallery-hero p{font-family:var(--font-mono); font-size:0.9rem; color:#cfc9bd; max-width:60ch;}
+.gallery-back{
+  display:inline-flex; align-items:center; gap:8px;
+  font-family:var(--font-mono); font-size:0.75rem; letter-spacing:0.06em; text-transform:uppercase;
+  color:var(--bone); opacity:0.8; margin-bottom:18px;
+}
+.gallery-back:hover{opacity:1; color:var(--copper-hot);}
+.gallery-back svg{width:16px; height:16px;}
+
+.series-jump{
+  display:flex; flex-wrap:wrap; gap:10px;
+  margin-top:28px;
+}
+.series-jump a{
+  font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.05em; text-transform:uppercase;
+  padding:9px 16px; border:1px solid var(--line-on-dark); border-radius:999px;
+  color:var(--bone); opacity:0.85; transition:all .15s ease;
+}
+.series-jump a:hover{opacity:1; border-color:var(--copper-hot); color:var(--copper-hot);}
+
+.series-section{padding:60px 0; border-bottom:1px solid #e8e6e1;}
+.series-section:last-of-type{border-bottom:none;}
+.series-head{display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:14px; margin-bottom:28px;}
+.series-head h2{font-size:clamp(1.6rem, 3vw, 2.2rem);}
+.series-count{font-family:var(--font-mono); font-size:0.75rem; color:#8a8378; letter-spacing:0.05em; text-transform:uppercase;}
+.series-desc{max-width:62ch; color:#555; margin-bottom:28px; font-size:0.95rem;}
+
+.photo-grid{
+  display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr));
+  gap:18px;
+}
+.photo-tile{
+  position:relative; aspect-ratio:4/3; overflow:hidden; border-radius:4px;
+  cursor:pointer; background:var(--anthracite-2);
+  border:1px solid #e3e1db;
+}
+.photo-tile img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .35s ease;}
+.photo-tile:hover img{transform:scale(1.06);}
+.photo-tile .tile-zoom{
+  position:absolute; top:10px; right:10px; width:30px; height:30px; border-radius:50%;
+  background:rgba(10,12,15,0.55); backdrop-filter:blur(3px);
+  display:flex; align-items:center; justify-content:center;
+  opacity:0; transition:opacity .2s ease;
+}
+.photo-tile:hover .tile-zoom{opacity:1;}
+.photo-tile .tile-zoom svg{width:15px; height:15px; color:#fff;}
+.photo-tile .tile-tag{
+  position:absolute; left:10px; bottom:10px;
+  background:rgba(10,12,15,0.68); color:#fff;
+  font-family:var(--font-mono); font-size:0.64rem; letter-spacing:0.08em; text-transform:uppercase;
+  padding:5px 10px; border-radius:3px;
+}
+
+/* Lightbox */
+.lightbox{
+  position:fixed; inset:0; z-index:200;
+  background:rgba(5,6,8,0.92);
+  display:none; align-items:center; justify-content:center;
+  padding:40px 20px;
+}
+.lightbox.open{display:flex;}
+.lightbox-inner{position:relative; max-width:1100px; width:100%; text-align:center;}
+.lightbox-inner img{max-width:100%; max-height:78vh; border-radius:4px; box-shadow:0 30px 70px rgba(0,0,0,0.5);}
+.lightbox-caption{
+  margin-top:16px; color:#f2f2f0; font-family:var(--font-mono); font-size:0.78rem; letter-spacing:0.03em;
+}
+.lightbox-close{
+  position:absolute; top:-46px; right:0; width:38px; height:38px; border-radius:50%;
+  background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.25);
+  display:flex; align-items:center; justify-content:center; color:#fff;
+}
+.lightbox-close svg{width:18px; height:18px;}
+.lightbox-nav{
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:44px; height:44px; border-radius:50%;
+  background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.25);
+  display:flex; align-items:center; justify-content:center; color:#fff;
+}
+.lightbox-nav svg{width:20px; height:20px;}
+.lightbox-prev{left:-60px;}
+.lightbox-next{right:-60px;}
+@media (max-width:900px){
+  .lightbox-prev{left:4px;}
+  .lightbox-next{right:4px;}
+  .lightbox-close{top:4px; right:4px;}
+  .lightbox-inner{padding-top:50px;}
+}
+
+.gallery-note{
+  max-width:720px; margin:0 auto; padding:50px 24px 90px; text-align:center;
+}
+.gallery-note p{font-family:var(--font-mono); font-size:0.85rem; color:#8a8378;}
+
+
+/* =========================================================
+   PHOTO GALLERY PAGE (photos.html)
+   ========================================================= */
+.pg-hero-meta{display:flex; flex-wrap:wrap; gap:28px; margin-top:30px; font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:#cfc9bd;}
+.pg-hero-meta b{display:block; font-family:var(--font-display); font-size:2rem; letter-spacing:0.02em; color:var(--copper-hot); font-weight:400; line-height:1.1;}
+.pg-main{background:var(--bone-dim); padding:56px 0 90px;}
+.pg-filters{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:34px; padding-bottom:26px; border-bottom:1px solid var(--line);}
+.pg-filter{
+  font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.06em; text-transform:uppercase;
+  padding:10px 18px; border:1px solid var(--anthracite); border-radius:999px;
+  background:transparent; color:var(--anthracite); transition:all .15s ease;
+}
+.pg-filter:hover{border-color:var(--copper-hot); color:var(--copper-hot);}
+.pg-filter.active{background:var(--anthracite); color:var(--bone); border-color:var(--anthracite);}
+.pg-filter .n{opacity:0.55; margin-left:6px;}
+.pg-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(290px, 1fr)); gap:22px;}
+.pg-card{
+  position:relative; margin:0; overflow:hidden; border-radius:4px; cursor:pointer;
+  background:var(--anthracite-2); aspect-ratio:4/3;
+  box-shadow:0 10px 28px rgba(10,12,15,0.14);
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+.pg-card:hover, .pg-card:focus-visible{transform:translateY(-4px); box-shadow:0 18px 40px rgba(10,12,15,0.26); outline:none;}
+.pg-card:focus-visible{outline:3px solid var(--copper-hot); outline-offset:3px;}
+.pg-card.hide{display:none;}
+.pg-card img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s ease;}
+.pg-card:hover img{transform:scale(1.07);}
+.pg-card::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 45%, rgba(10,12,15,0.88) 100%); opacity:0.85; transition:opacity .3s ease;}
+.pg-card:hover::after{opacity:1;}
+.pg-card .pg-num{position:absolute; top:12px; left:14px; z-index:2; font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.12em; color:#fff; background:rgba(10,12,15,0.55); padding:4px 9px; border-radius:3px; backdrop-filter:blur(3px);}
+.pg-card .pg-cap{position:absolute; left:0; right:0; bottom:0; z-index:2; padding:16px 18px; color:#fff;}
+.pg-card .pg-cat{display:block; font-family:var(--font-mono); font-size:0.64rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--copper-hot); font-weight:700; margin-bottom:5px;}
+.pg-card .pg-txt{display:block; font-size:0.88rem; line-height:1.35; font-weight:500;}
+.pg-cta{background:var(--anthracite); color:var(--bone); padding:70px 0; text-align:center; position:relative; overflow:hidden;}
+.pg-cta::after{content:""; position:absolute; inset:0; background-image:linear-gradient(var(--line-on-dark) 1px, transparent 1px), linear-gradient(90deg, var(--line-on-dark) 1px, transparent 1px); background-size:26px 26px; opacity:0.3; pointer-events:none;}
+.pg-cta .container{position:relative; z-index:1;}
+.pg-cta h2{font-size:clamp(1.8rem,4vw,2.6rem); margin-bottom:12px; color:var(--bone);}
+.pg-cta p{font-family:var(--font-mono); font-size:0.88rem; color:#cfc9bd; margin-bottom:28px;}
+.pg-cta .btn{margin:0 6px 10px;}
+@media (max-width:600px){
+  .pg-grid{grid-template-columns:1fr; gap:16px;}
+  .pg-hero-meta{gap:20px;}
+}
+
+/* ---- Legal page ---- */
+.legal-main{padding:64px 0 90px; background:var(--bone);}
+.legal-wrap{max-width:860px;}
+.legal-block{padding:30px 0; border-top:1px solid var(--line);}
+.legal-block:first-child{border-top:0; padding-top:0;}
+.legal-block h2{font-family:var(--font-display); font-weight:400; font-size:clamp(1.5rem,3vw,2rem); letter-spacing:0.02em; text-transform:uppercase; margin-bottom:14px; color:var(--ink);}
+.legal-block h3{font-family:var(--font-mono); font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--copper); margin:22px 0 8px;}
+.legal-block p, .legal-list li{font-size:1rem; line-height:1.7; color:#2a2d31; margin-bottom:10px;}
+.legal-list{margin:6px 0 0; padding-left:0;}
+.legal-list li{padding-left:18px; position:relative;}
+.legal-list li::before{content:""; position:absolute; left:0; top:0.72em; width:8px; height:2px; background:var(--copper-hot);}
+.legal-block a{color:var(--copper); border-bottom:1px solid currentColor;}
+.legal-privacy{border-top:2px solid var(--ink); margin-top:20px; padding-top:40px;}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html#top" class="brand" aria-label="Bronzefox Contracting Inc.">
+      <img src="assets/logo.jpg" alt="Bronzefox Contracting Inc. logo">
+      <span class="brand-name">Bronzefox<small data-en="Contracting Inc. · Whitehorse, YT" data-fr="Contracting Inc. · Whitehorse, YT">Contracting Inc. · Whitehorse, YT</small></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <a href="index.html#top" data-en="Home" data-fr="Accueil">Home</a>
+      <a href="index.html#about" data-en="About Us" data-fr="À propos">About Us</a>
+      <a href="index.html#services" data-en="Services" data-fr="Services">Services</a>
+      <a href="photos.html" data-en="Gallery" data-fr="Galerie">Gallery</a>
+      <a href="index.html#quote" data-en="Get a Quote" data-fr="Devis gratuit">Get a Quote</a>
+      <a href="index.html#contact" data-en="Contact" data-fr="Contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" translate="no" role="group" aria-label="Language / Langue">
+        <button type="button" id="lang-en" class="active" aria-pressed="true">EN</button>
+        <button type="button" id="lang-fr" aria-pressed="false">FR</button>
+      </div>
+      <a class="call-chip" href="tel:+18676871130">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+        867-687-1130
+      </a>
+      <a href="index.html#quote" class="btn btn-primary">
+        <span data-en="Get a Free Quote" data-fr="Devis Gratuit">Get a Free Quote</span>
+      </a>
+      <button class="burger" id="burger-btn" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="burger-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="gallery-hero">
+  <div class="container">
+    <a href="index.html" class="gallery-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      <span data-en="Back to Home" data-fr="Retour à l'accueil">Back to Home</span>
+    </a>
+    <div class="eyebrow" data-en="Bronzefox Contracting Inc." data-fr="Bronzefox Contracting Inc.">Bronzefox Contracting Inc.</div>
+    <h1 data-en="Legal Notice" data-fr="Mentions Légales">Legal Notice</h1>
+    <p data-en="Who publishes this website, how it is hosted, and how we handle your information." data-fr="Qui édite ce site, comment il est hébergé, et comment nous traitons vos informations.">Who publishes this website, how it is hosted, and how we handle your information.</p>
+  </div>
+</section>
+
+<main class="legal-main">
+  <div class="container legal-wrap">
+<section class="legal-block" id="legal">
+  <h2 data-en="1. Website publisher" data-fr="1. Éditeur du site">1. Website publisher</h2>
+  <p data-en="This website is published by <b>Bronzefox Contracting Inc.</b>, a company operating in Whitehorse, Yukon, Canada." data-fr="Ce site est édité par <b>Bronzefox Contracting Inc.</b>, entreprise exerçant à Whitehorse, Yukon, Canada.">This website is published by <b>Bronzefox Contracting Inc.</b>, a company operating in Whitehorse, Yukon, Canada.</p>
+  <ul class="legal-list"><li data-en="Address: Whitehorse, Yukon, Canada" data-fr="Adresse : Whitehorse, Yukon, Canada">Address: Whitehorse, Yukon, Canada</li><li data-en="Phone: <a href=&quot;tel:+18676871130&quot;>867-687-1130</a>" data-fr="Téléphone : <a href=&quot;tel:+18676871130&quot;>867-687-1130</a>">Phone: <a href="tel:+18676871130">867-687-1130</a></li><li data-en="Email: <a href=&quot;mailto:bronzefox.inc@gmail.com&quot;>bronzefox.inc@gmail.com</a>" data-fr="Courriel : <a href=&quot;mailto:bronzefox.inc@gmail.com&quot;>bronzefox.inc@gmail.com</a>">Email: <a href="mailto:bronzefox.inc@gmail.com">bronzefox.inc@gmail.com</a></li></ul>
+</section>
+<section class="legal-block">
+  <h2 data-en="2. Design and technical management" data-fr="2. Conception et gestion technique">2. Design and technical management</h2>
+  <p data-en="Website design, development and technical management: <a href=&quot;https://www.l-amagie.art&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;>L'AMagie · www.l-amagie.art</a> (France)." data-fr="Conception, développement et gestion technique du site : <a href=&quot;https://www.l-amagie.art&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;>L'AMagie · www.l-amagie.art</a> (France).">Website design, development and technical management: <a href="https://www.l-amagie.art" target="_blank" rel="noopener noreferrer">L'AMagie · www.l-amagie.art</a> (France).</p>
+</section>
+<section class="legal-block">
+  <h2 data-en="3. Hosting, domain name and services" data-fr="3. Hébergement, nom de domaine et services">3. Hosting, domain name and services</h2>
+  <p data-en="The site is hosted on <b>GitHub Pages</b> (GitHub, Inc., United States). Its domain name is managed through <b>Cloudflare, Inc.</b> (DNS service, United States) and was registered with <b>Gandi SAS</b> (France)." data-fr="Le site est hébergé sur <b>GitHub Pages</b> (GitHub, Inc., États-Unis). Son nom de domaine est géré via <b>Cloudflare, Inc.</b> (service DNS, États-Unis) et a été enregistré auprès de <b>Gandi SAS</b> (France).">The site is hosted on <b>GitHub Pages</b> (GitHub, Inc., United States). Its domain name is managed through <b>Cloudflare, Inc.</b> (DNS service, United States) and was registered with <b>Gandi SAS</b> (France).</p>
+</section>
+<section class="legal-block">
+  <h2 data-en="4. Intellectual property" data-fr="4. Propriété intellectuelle">4. Intellectual property</h2>
+  <p data-en="The texts, photographs, videos, logo and design of this website are the property of Bronzefox Contracting Inc. or are used with permission. Any reproduction, copy or reuse, in whole or in part, without prior written authorization is prohibited." data-fr="Les textes, photographies, vidéos, logo et le graphisme de ce site sont la propriété de Bronzefox Contracting Inc. ou utilisés avec autorisation. Toute reproduction, copie ou réutilisation, totale ou partielle, sans autorisation écrite préalable est interdite.">The texts, photographs, videos, logo and design of this website are the property of Bronzefox Contracting Inc. or are used with permission. Any reproduction, copy or reuse, in whole or in part, without prior written authorization is prohibited.</p>
+</section>
+<section class="legal-block">
+  <h2 data-en="5. Liability" data-fr="5. Responsabilité">5. Liability</h2>
+  <p data-en="The information on this site is provided for general information only and may be updated at any time. It does not constitute a quote, a contract or a commitment: every project is subject to a written quote. Bronzefox Contracting Inc. is not responsible for the content of external websites linked from this site." data-fr="Les informations de ce site sont fournies à titre indicatif et peuvent être modifiées à tout moment. Elles ne constituent ni un devis, ni un contrat, ni un engagement : chaque projet fait l'objet d'un devis écrit. Bronzefox Contracting Inc. n'est pas responsable du contenu des sites externes vers lesquels ce site renvoie.">The information on this site is provided for general information only and may be updated at any time. It does not constitute a quote, a contract or a commitment: every project is subject to a written quote. Bronzefox Contracting Inc. is not responsible for the content of external websites linked from this site.</p>
+</section>
+<section class="legal-block">
+  <h2 data-en="6. Applicable law" data-fr="6. Droit applicable">6. Applicable law</h2>
+  <p data-en="This website and its use are governed by the laws in force in the Yukon and the federal laws of Canada applicable there." data-fr="Ce site et son utilisation sont régis par les lois en vigueur au Yukon et les lois fédérales du Canada qui y sont applicables.">This website and its use are governed by the laws in force in the Yukon and the federal laws of Canada applicable there.</p>
+</section>
+<section class="legal-block legal-privacy" id="privacy">
+  <h2 data-en="Privacy Policy" data-fr="Politique de confidentialité">Privacy Policy</h2>
+  <p data-en="We respect your privacy and collect only what is needed to answer you." data-fr="Nous respectons votre vie privée et ne collectons que ce qui est nécessaire pour vous répondre.">We respect your privacy and collect only what is needed to answer you.</p>
+  <h3 data-en="Information we collect" data-fr="Informations collectées">Information we collect</h3>
+  <p data-en="When you use the quote form, you provide your name, email address, phone number and project details. This information is sent to Bronzefox Contracting Inc. through the form service Web3Forms, and is used only to reply to your request and follow up on your project." data-fr="Lorsque vous utilisez le formulaire de devis, vous nous transmettez votre nom, votre adresse courriel, votre numéro de téléphone et les détails de votre projet. Ces informations sont envoyées à Bronzefox Contracting Inc. via le service de formulaires Web3Forms et servent uniquement à répondre à votre demande et à assurer le suivi de votre projet.">When you use the quote form, you provide your name, email address, phone number and project details. This information is sent to Bronzefox Contracting Inc. through the form service Web3Forms, and is used only to reply to your request and follow up on your project.</p>
+  <h3 data-en="What we do not do" data-fr="Ce que nous ne faisons pas">What we do not do</h3>
+  <p data-en="We do not sell or rent your information. This site does not use advertising or analytics cookies. Your language choice (EN/FR) is saved only in your own browser." data-fr="Nous ne vendons ni ne louons vos informations. Ce site n'utilise ni cookies publicitaires ni cookies d'analyse. Votre choix de langue (EN/FR) est enregistré uniquement dans votre propre navigateur.">We do not sell or rent your information. This site does not use advertising or analytics cookies. Your language choice (EN/FR) is saved only in your own browser.</p>
+  <h3 data-en="Third-party services" data-fr="Services tiers">Third-party services</h3>
+  <p data-en="To display the site, your browser may load fonts from Google Fonts and the map from Google Maps, which may receive your IP address. The site is served by GitHub Pages and Cloudflare, which process technical connection data as part of their service." data-fr="Pour afficher le site, votre navigateur peut charger des polices depuis Google Fonts et la carte depuis Google Maps, qui peuvent recevoir votre adresse IP. Le site est diffusé par GitHub Pages et Cloudflare, qui traitent des données techniques de connexion dans le cadre de leur service.">To display the site, your browser may load fonts from Google Fonts and the map from Google Maps, which may receive your IP address. The site is served by GitHub Pages and Cloudflare, which process technical connection data as part of their service.</p>
+  <h3 data-en="Your rights" data-fr="Vos droits">Your rights</h3>
+  <p data-en="You may ask to see, correct or delete the information you sent us by writing to <a href=&quot;mailto:bronzefox.inc@gmail.com&quot;>bronzefox.inc@gmail.com</a>. We keep it only as long as needed to handle your request." data-fr="Vous pouvez demander à consulter, corriger ou supprimer les informations que vous nous avez transmises en écrivant à <a href=&quot;mailto:bronzefox.inc@gmail.com&quot;>bronzefox.inc@gmail.com</a>. Nous ne les conservons que le temps nécessaire au traitement de votre demande.">You may ask to see, correct or delete the information you sent us by writing to <a href="mailto:bronzefox.inc@gmail.com">bronzefox.inc@gmail.com</a>. We keep it only as long as needed to handle your request.</p>
+  <p data-en="Last updated: November 2026." data-fr="Dernière mise à jour : novembre 2026.">Last updated: November 2026.</p>
+</section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo.jpg" alt="Bronzefox Contracting Inc. logo">
+        <div>
+          <div class="footer-brand-name">Bronzefox Contracting Inc.</div>
+          <small style="font-family:var(--font-mono); font-size:0.7rem; color:#8a8378;" data-en="Serving Whitehorse &amp; the Yukon" data-fr="Au service de Whitehorse et du Yukon">Serving Whitehorse &amp; the Yukon</small>
+        </div>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <b data-en="Navigate" data-fr="Navigation">Navigate</b>
+          <a href="index.html#services" data-en="Services" data-fr="Services">Services</a>
+          <a href="index.html#projects" data-en="Projects" data-fr="Réalisations">Projects</a>
+          <a href="photos.html" data-en="Photo Gallery" data-fr="Galerie Photos">Photo Gallery</a>
+          <a href="gallery.html" data-en="Projects by Series" data-fr="Projets par Série">Projects by Series</a>
+          <a href="index.html#quote" data-en="Get a Quote" data-fr="Devis gratuit">Get a Quote</a>
+        </div>
+        <div class="footer-col">
+          <b data-en="Contact" data-fr="Contact">Contact</b>
+          <a href="tel:+18676871130">867-687-1130</a>
+          <a href="mailto:bronzefox.inc@gmail.com">bronzefox.inc@gmail.com</a>
+          <span data-en="Whitehorse, Yukon" data-fr="Whitehorse, Yukon">Whitehorse, Yukon</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span data-en="© 2026 Bronzefox Contracting Inc. All rights reserved." data-fr="© 2026 Bronzefox Contracting Inc. Tous droits réservés.">© 2026 Bronzefox Contracting Inc. All rights reserved.</span>
+      <span class="footer-legal">
+        <a href="#" data-en="Site Map" data-fr="Plan du Site">Site Map</a>
+        <a href="legal.html#privacy" data-en="Privacy Policy" data-fr="Politique de Confidentialité">Privacy Policy</a>
+        <a href="legal.html" data-en="Legal Notice" data-fr="Mentions Légales">Legal Notice</a>
+      </span>
+    </div>
+  </div>
+  <div class="webmaster-credit">
+  <span>© Webmaster</span>
+  <a href="https://www.l-amagie.art" target="_blank" rel="noopener noreferrer">L'AMagie · www.l-amagie.art</a>
+  <a class="footer-facebook" href="https://www.facebook.com/profile.php?id=61575816501024" target="_blank" rel="noopener noreferrer" aria-label="Facebook Bronzefox">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07C2 17.09 5.66 21.25 10.44 22v-7.03H7.9v-2.9h2.54V9.86c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.23.2 2.23.2v2.46h-1.25c-1.23 0-1.61.77-1.61 1.56v1.9h2.74l-.44 2.9h-2.3V22C18.34 21.25 22 17.09 22 12.07z"/>
+    </svg>
+    <span>Facebook Bronzefox</span>
+  </a>
+</div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var htmlEl = document.documentElement;
+  var btnEn = document.getElementById('lang-en');
+  var btnFr = document.getElementById('lang-fr');
+  var translatable = document.querySelectorAll('[data-en]');
+  function setLang(lang){
+    htmlEl.setAttribute('lang', lang);
+    htmlEl.setAttribute('data-lang', lang);
+    translatable.forEach(function(el){
+      var text = el.getAttribute('data-' + lang);
+      if(text !== null){ el.innerHTML = text; }
+    });
+    btnEn.classList.toggle('active', lang === 'en');
+    btnFr.classList.toggle('active', lang === 'fr');
+    btnEn.setAttribute('aria-pressed', lang === 'en');
+    btnFr.setAttribute('aria-pressed', lang === 'fr');
+    try{ localStorage.setItem('bronzefox-lang', lang); }catch(e){}
+  }
+  btnEn.addEventListener('click', function(){ setLang('en'); });
+  btnFr.addEventListener('click', function(){ setLang('fr'); });
+  var savedLang = null;
+  try{ savedLang = localStorage.getItem('bronzefox-lang'); }catch(e){}
+  if(savedLang === 'fr'){ setLang('fr'); }
+
+  var burger = document.getElementById('burger-btn');
+  var nav = document.getElementById('main-nav');
+  burger.addEventListener('click', function(){
+    var isOpen = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', isOpen);
+  });
+  nav.querySelectorAll('a').forEach(function(link){
+    link.addEventListener('click', function(){
+      nav.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* Open Gmail compose when the visitor clicks an email link */
+  document.addEventListener('click', function(ev){
+    var a = ev.target.closest && ev.target.closest('a[href^="mailto:"]');
+    if(!a) return;
+    var addr = a.getAttribute('href').replace(/^mailto:/i,'').split('?')[0];
+    var w = window.open('https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(addr), '_blank', 'noopener');
+    if(w){ ev.preventDefault(); }
+  });
+})();
+</script>
+</body>
+</html>
